@@ -16,7 +16,7 @@ end
 def get_japanese_emoticon(file, emoticon)
   library_hash = load_library(file)
   library_hash.each do |key|
-    if library_hash[key] == emoticon
+    if library_hash[key]['english'] == emoticon
       return library_hash['japanese']
     end
   end
