@@ -11,7 +11,6 @@ def load_library(file)
     }
     end
   library_hash
-  binding.pry
 end
 
 def get_japanese_emoticon(file, emoticon)
