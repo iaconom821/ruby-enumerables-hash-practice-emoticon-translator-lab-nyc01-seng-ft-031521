@@ -11,11 +11,11 @@ def load_library(file)
     }
     end
   library_hash
-  binding.pry
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  library_hash = load_library(file)
+  library_hash.find
 end
 
 def get_english_meaning
