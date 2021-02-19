@@ -18,6 +18,7 @@ def get_japanese_emoticon(file, emoticon)
   library_hash.each do |key, value|
     if value[:english] == emoticon
       return value[:japanese]
+    end
   end
 end
 
@@ -26,5 +27,6 @@ def get_english_meaning(file, emoticon)
   library_hash.each do |key, value|
     if value[:japanese] == emoticon
       return value[:english]
+    end
   end
 end
